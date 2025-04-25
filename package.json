@@ -25,7 +25,8 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "deploy:local": "npx hardhat run ./scripts/deploy.js --network localhost",
-    "deploy:test": "npx hardhat run ./scripts/deploy.js --network sepolia"
+    "deploy:test": "npx hardhat run ./scripts/deploy.js --network sepolia",
+    "firebase:start":"npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
