@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 
-const usedChainId = "0x7a69"; // localhost
+const usedChainId = process.env.CHAIN_ID; // localhost
 
 function Navbar() {
   const [connected, toggleConnect] = useState(false);
@@ -28,6 +28,8 @@ function Navbar() {
   }
 
   async function connectWebsite() {
+
+
     const chainId = await window.ethereum.request({ method: "eth_chainId" });
     if (chainId !== usedChainId) {
       //alert('Incorrect network! Switch your metamask network to Rinkeby');
