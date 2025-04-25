@@ -52,7 +52,7 @@ module.exports = {
     },
   },
   gasReporter: {
-    enabled: true,    // 启用 Gas 报告
+    enabled: false,    // 启用 Gas 报告
   },
   etherscan:{
     apiKey: {
