@@ -2,6 +2,8 @@ require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
 require("solidity-coverage");
 require("hardhat-gas-reporter"); // 引入插件
+// 验证
+require("@nomicfoundation/hardhat-verify");
 require("dotenv").config();
 //可以直接导入工具箱：https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-toolbox
 
@@ -51,5 +53,10 @@ module.exports = {
   },
   gasReporter: {
     enabled: true,    // 启用 Gas 报告
+  },
+  etherscan:{
+    apiKey: {
+      sepolia:process.env.ETHERSCAN_API
+    }
   },
 };

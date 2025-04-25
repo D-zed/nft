@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "deploy:local": "npx hardhat run ./scripts/deploy.js --network localhost",
     "deploy:test": "npx hardhat run ./scripts/deploy.js --network sepolia",
-    "firebase:start":"npm run build && firebase deploy"
+    "firebase:start": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.13",
     "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "assert": "^2.0.0",

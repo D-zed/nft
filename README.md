@@ -50,3 +50,24 @@
 4. 启动前端
 
    `npm start`
+
+代码验证
+yarn add -D @nomicfoundation/hardhat-verify
+在hardhat.config.js中配置：
+  require("@nomicfoundation/hardhat-verify");
+配置平台的apikey：
+  etherscan:{
+    apiKey: {
+      sepolia:process.env.ETHERSCAN_API
+    }
+  },
+我的合约 0x2d9aF4a7Ee4Ef2181b4f98c246520D1e498115C8
+npx hardhat verify --network sepolia 0x2d9aF4a7Ee4Ef2181b4f98c246520D1e498115C8
+
+输出success-info：
+Successfully submitted source code for contract
+contracts/NFTMarketplace.sol:NFTMarketplace at 0x2d9aF4a7Ee4Ef2181b4f98c246520D1e498115C8
+for verification on the block explorer. Waiting for verification result...
+
+Successfully verified contract NFTMarketplace on the block explorer.
+https://sepolia.etherscan.io/address/0x2d9aF4a7Ee4Ef2181b4f98c246520D1e498115C8#code
