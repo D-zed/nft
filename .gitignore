@@ -1,0 +1,4 @@
+node_modules
+.env
+Marketplace.json
+contracts-dbg

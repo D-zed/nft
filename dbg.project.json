@@ -1,0 +1,13 @@
+{
+    "contractsDir": "contracts-dbg",
+    "selectedContract": "Test1",
+    "autoOpen": true,
+    "breakOnEntry": false,
+    "symbols": {
+        "hardhat": {
+            "projectPaths": [
+                "f:\\web3_learn\\3v1项目\\03-C2E-NFT\\nft"
+            ]
+        }
+    }
+}

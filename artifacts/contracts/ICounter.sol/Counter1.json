@@ -1,0 +1,18 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Counter1",
+  "sourceName": "contracts/ICounter.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "increment",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50606580601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063d09de08a14602d575b600080fd5b00fea2646970667358221220406ad5da8c22c1ea2de7a782ec0b5c3d0236e8c0eb0e6b6d2323ed69cdcfa74364736f6c634300081a0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063d09de08a14602d575b600080fd5b00fea2646970667358221220406ad5da8c22c1ea2de7a782ec0b5c3d0236e8c0eb0e6b6d2323ed69cdcfa74364736f6c634300081a0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
